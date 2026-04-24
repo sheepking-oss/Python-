@@ -49,6 +49,28 @@ class CameraConfig:
     PREFER_HEIGHT = 720
     PREFER_FPS = 60
 
+class PreprocessingConfig:
+    ENABLE_PREPROCESSING = True
+    
+    BLUR_KERNEL = 5
+    CLAHE_CLIP_LIMIT = 2.0
+    CLAHE_GRID_SIZE = 8
+    
+    ENABLE_SKIN_DETECTION = True
+    ENABLE_CONTOUR_FEATURES = True
+    MIN_SKIN_RATIO = 0.1
+    
+    ROI_PADDING = 50
+    
+    YCRCB_LOWER = (0, 133, 77)
+    YCRCB_UPPER = (255, 173, 127)
+    
+    HSV_LOWER = (0, 10, 60)
+    HSV_UPPER = (20, 150, 255)
+    
+    USE_ADAPTIVE_THRESHOLD = True
+
+
 class GestureConfig:
     GESTURES = {
         0: 'rock',
